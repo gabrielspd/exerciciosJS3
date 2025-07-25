@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; 
+  color: #333; 
+}
+
+header {
+  background-color: #6a0dad; 
+  color: #ffffff; 
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #4b0082; 
+}
+
+main {
+  background-color: #f8f4ff; 
+  color: #000000;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #cba8f5; 
+}
+
+footer {
+  background-color: #6a0dad;
+  color: #ffffff;
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid #4b0082;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8em;
+  text-decoration: underline;
+}
+
+.destaque {
+  font-style: italic;
+  background-color: #eee6ff;
+}
+
+#importante {
+  border-top: 4px solid #6a0dad;
+  padding-top: 10px; 
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* só abrir em telas com <= 600px -- funcionando */
+@media (max-width: 600px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav#menu {
+    display: none;
+    flex-direction: column;
+    background-color: #6a0dad;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  nav#menu a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  nav#menu.active {
+    display: flex;
+  }
+}
+
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #6a0dad;
+  border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+}

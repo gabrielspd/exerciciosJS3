@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site atividade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Bem-vindo a atividade</h1>
+    <p>Aqui está o paragrafo</p>
+    <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+    <nav id="menu">
+        <ul>
+            <a href="index.html">Inicio</a>
+            <a href="#">Menu 2</a>
+            <a href="exec06.html">Exercicio 6</a>
+        </ul>
+    </nav>
+    
+</header>
+
+<main>
+    <section>Missão
+        <h2>Aqui seria o h2 da Missão</h2>
+        <p>Aqui seria o paragrafo da seção dentro da missão</p>
+    </section>
+
+    <section>Visão
+        <h2>Aqui seria o h2 da Visão</h2>
+        <p>Aqui seria o paragrafo da seção dentro da visão</p>
+    </section>
+
+    <p class="destaque">Esse parágrafo tem destaque do exec06.</p>
+    <p id="importante">Esse parágrafo tem #importante do exec06.</p>
+
+</main>
+
+
+<footer>
+    <p>2025 Copyright da página roda-pé, redes sociais, telefones, about us e etc</p>
+</footer>
+
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('menu');
+
+  toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
